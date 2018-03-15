@@ -1,0 +1,25 @@
+---
+spring:
+  application:
+    name: rest-server
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rest-server
+    username: postgres
+    password: root
+    driverClassName: org.postgresql.Driver
+  mvc:
+    dispatch-options-request:true    
+server:
+  port: 8020
+  
+
+#server:
+#  port: ${PORT:${SERVER_PORT:0}}   # Select any available port if neither port nor server port are specified.
+  
+
+  
