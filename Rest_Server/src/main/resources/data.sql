@@ -5596,3 +5596,11 @@ Insert into Cidade (Nome, id_estado) select 'Vicentinópolis', 52 where not exis
 Insert into Cidade (Nome, id_estado) select 'Vila Boa', 52 where not exists (select 1 from cidade where nome = 'Vila Boa' and id_estado = 52);
 Insert into Cidade (Nome, id_estado) select 'Vila Propício', 52 where not exists (select 1 from cidade where nome = 'Vila Propício' and id_estado = 52);
 Insert into Cidade (Nome, id_estado) select 'Brasília', 53 where not exists (select 1 from cidade where nome = 'Brasília' and id_estado = 53);
+Insert into Categoria (id, descricao) select 1, 'Informática' where not exists(select 1 from categoria where id = 1  and descricao = 'Informática');
+
+
+
+
+
+
+
