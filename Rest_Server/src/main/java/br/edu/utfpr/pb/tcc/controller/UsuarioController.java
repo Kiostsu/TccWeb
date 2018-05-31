@@ -59,15 +59,4 @@ public class UsuarioController {
 		usuarioRepository.delete(id);
 	}
 	
-	
-	@GetMapping("/pass/{password}")
-	public String getEncodedPassword(String pass){
-		return bCrypt.encode(pass);
-	}
-	
-	
-	
-	
-	
-	
 }

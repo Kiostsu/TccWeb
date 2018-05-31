@@ -43,8 +43,7 @@ public class Usuario implements UserDetails{
 	@Column(length = 150, nullable = false)
 	private String nome;
 	
-	@Column(length = 512, nullable = false)
-	@Setter
+	@Column(length = 512, nullable = false)	
 	private String password;
 	
 	@Column(length = 15, nullable = false)
@@ -78,11 +77,10 @@ public class Usuario implements UserDetails{
 		permissoes.add(permissao);
 	}
 	
-	public String getEncodedPassword(String pass){
-		if (! pass.isEmpty()){
-			return bCrypt.encode(pass);
-		}
-		return pass;
+	public void setPassword(String pass){
+		if (!pass.isEmpty()){			
+			this.password = bCrypt.encode(pass);			
+		}		
 	}
 
 	@Override

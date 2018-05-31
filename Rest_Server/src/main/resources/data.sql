@@ -5610,4 +5610,7 @@ Insert into Categoria (id, descricao) select 11, 'Biscoitos' where not exists(se
 Insert into Categoria (id, descricao) select 12, 'Legumes e Verduras' where not exists(select 12 from categoria where id = 12  and descricao = 'Legumes e Verduras');
 Insert into Categoria (id, descricao) select 13, 'Padaria' where not exists(select 13 from categoria where id = 13  and descricao = 'Padaria');
 Insert into Categoria (id, descricao) select 14, 'Doces e Sobremesas' where not exists(select 1 from categoria where id = 14  and descricao = 'Doces e Sobremesas');
-Insert into Categoria (id, descricao) select 15, 'Açougue' where not exists(select 1 from categoria where id = 15  and descricao = 'Açougue'); 
+Insert into Categoria (id, descricao) select 15, 'Açougue' where not exists(select 1 from categoria where id = 15  and descricao = 'Açougue');
+
+Insert into Permissao (id,permissao) select 1, 'ADMIN' where not exists(select 1 from Permissao where id = 1 and permissao = 'ADMIN');
+Insert into Permissao (id,permissao) select 2, 'USER' where not exists(select 1 from Permissao where id = 2 and permissao = 'USER');
