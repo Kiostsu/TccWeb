@@ -22,7 +22,7 @@ public class Estado implements Serializable{
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY, generator="IdOrGenerated")
 	@GenericGenerator(name="IdOrGenerated",
-	                  strategy="br.edu.utfpr.pb.tcc.util.UseIdOrGenerate")
+	                  strategy="br.edu.utfpr.pb.tcc.util.UseIdOrGenerateEstado")
 	private Long id;
 		
 	@Column(length = 100, nullable=false)

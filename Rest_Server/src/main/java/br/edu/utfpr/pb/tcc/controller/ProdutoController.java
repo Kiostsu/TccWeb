@@ -35,6 +35,15 @@ public class ProdutoController {
 		map.put("produtos", produtos);
 		return map;
 	}
+	
+	@GetMapping("/list/{id}")
+	public Map<String,List<Produto>> findByMercadoid(@PathVariable Long id){
+		Map<String,List<Produto>> map = new HashMap<String,List<Produto>>();
+		List<Produto> produtos = new ArrayList<Produto>();
+		produtos.addAll(produtoRepository.findByMercadoId(id));
+		map.put("produtos", produtos);
+		return map;
+	}
 		
 	
 	@GetMapping("/{id}")

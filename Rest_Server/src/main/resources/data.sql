@@ -5597,22 +5597,20 @@ Insert into Cidade (Nome, id_estado) select 'Vila Boa', 52 where not exists (sel
 Insert into Cidade (Nome, id_estado) select 'Vila Propício', 52 where not exists (select 1 from cidade where nome = 'Vila Propício' and id_estado = 52);
 Insert into Cidade (Nome, id_estado) select 'Brasília', 53 where not exists (select 1 from cidade where nome = 'Brasília' and id_estado = 53);
 Insert into Categoria (id, descricao) select 1, 'Informática' where not exists(select 1 from categoria where id = 1  and descricao = 'Informática');
-Insert into Categoria (id, descricao) select 2, 'Material de Limpeza' where not exists(select 2 from categoria where id = 2  and nome = 'Material de Limpeza');
-Insert into Categoria (id, descricao) select 3, 'Laticínios' where not exists(select 3 from categoria where id = 3  and nome = 'Laticínios');
-Insert into Categoria (id, descricao) select 4, 'Enlatados' where not exists(select 4 from categoria where id = 4  and nome = 'Enlatados');
-Insert into Categoria (id, descricao) select 5, 'Hortifruti' where not exists(select 5 from categoria where id = 5  and nome = 'Hortifruti');
-Insert into Categoria (id, descricao) select 6, 'Bebidas' where not exists(select 6 from categoria where id = 6  and nome = 'Bebidas');
-Insert into Categoria (id, descricao) select 7, 'Cereais' where not exists(select 7 from categoria where id = 7  and nome = 'Cereais');
-Insert into Categoria (id, descricao) select 8, 'Material de Higiene' where not exists(select 8 from categoria where id = 8  and nome = 'Material de Higiene');
-Insert into Categoria (id, descricao) select 9, 'Cereais' where not exists(select 9 from categoria where id = 9  and nome = 'Cereais');
-Insert into Categoria (id, descricao) select 10, 'Perfumaria' where not exists(select 10 from categoria where id = 10  and nome = 'Perfumaria');
-Insert into Categoria (id, descricao) select 11, 'Biscoitos' where not exists(select 11 from categoria where id = 11  and nome = 'Biscoitos');
-Insert into Categoria (id, descricao) select 12, 'Legumes e Verduras' where not exists(select 12 from categoria where id = 12  and nome = 'Legumes e Verduras');
-Insert into Categoria (id, descricao) select 13, 'Padaria' where not exists(select 13 from categoria where id = 13  and nome = 'Padaria');
+Insert into Categoria (id, descricao) select 2, 'Material de Limpeza' where not exists(select 2 from categoria where id = 2  and descricao = 'Material de Limpeza');
+Insert into Categoria (id, descricao) select 3, 'Laticínios' where not exists(select 3 from categoria where id = 3  and descricao = 'Laticínios');
+Insert into Categoria (id, descricao) select 4, 'Enlatados' where not exists(select 4 from categoria where id = 4  and descricao = 'Enlatados');
+Insert into Categoria (id, descricao) select 5, 'Hortifruti' where not exists(select 5 from categoria where id = 5  and descricao = 'Hortifruti');
+Insert into Categoria (id, descricao) select 6, 'Bebidas' where not exists(select 6 from categoria where id = 6  and descricao = 'Bebidas');
+Insert into Categoria (id, descricao) select 7, 'Cereais' where not exists(select 7 from categoria where id = 7  and descricao = 'Cereais');
+Insert into Categoria (id, descricao) select 8, 'Material de Higiene' where not exists(select 8 from categoria where id = 8  and descricao = 'Material de Higiene');
+Insert into Categoria (id, descricao) select 9, 'Cereais' where not exists(select 9 from categoria where id = 9  and descricao = 'Cereais');
+Insert into Categoria (id, descricao) select 10, 'Perfumaria' where not exists(select 10 from categoria where id = 10  and descricao = 'Perfumaria');
+Insert into Categoria (id, descricao) select 11, 'Biscoitos' where not exists(select 11 from categoria where id = 11  and descricao = 'Biscoitos');
+Insert into Categoria (id, descricao) select 12, 'Legumes e Verduras' where not exists(select 12 from categoria where id = 12  and descricao = 'Legumes e Verduras');
+Insert into Categoria (id, descricao) select 13, 'Padaria' where not exists(select 13 from categoria where id = 13  and descricao = 'Padaria');
+Insert into Categoria (id, descricao) select 14, 'Doces e Sobremesas' where not exists(select 1 from categoria where id = 14  and descricao = 'Doces e Sobremesas');
+Insert into Categoria (id, descricao) select 15, 'Açougue' where not exists(select 1 from categoria where id = 15  and descricao = 'Açougue');
 
-
-
-
-
-
-
+Insert into Permissao (id,permissao) select 1, 'ADMIN' where not exists(select 1 from Permissao where id = 1 and permissao = 'ADMIN');
+Insert into Permissao (id,permissao) select 2, 'USER' where not exists(select 1 from Permissao where id = 2 and permissao = 'USER');
